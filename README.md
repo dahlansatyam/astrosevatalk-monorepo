@@ -1,23 +1,73 @@
-# turborepo-tailwindcss
+# Turborepo starter
 
-A sample setup of a Turborepo monorepository with shared Tailwind CSS configurations.
+This is an official npm starter turborepo.
 
-## Installation
+## What's inside?
 
-1. To get this project files locally on your machine, you can clone this repository by running the following command on your terminal or command line:
+This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
 
-```sh
-git clone https://github.com/cvrlnolan/turborepo-tailwindcss.git
+### Apps and Packages
+
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Utilities
+
+This turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd my-turborepo
+npm run build
 ```
 
-2. Install all the dependency packages found in the `package.json` files across the monorepo apps by running `yarn install` from the project root directory.
-3. To start the development servers of all the applications in your monorepo in parrallel, simply run `yarn dev`. To start an individual app the monorepo, run:
-   `yarn workspace <name> dev` (_name_: is found/set in the package.json for each individual app folder)
+### Develop
 
-## Apps & Packages
+To develop all apps and packages, run the following command:
 
-- `apps/docs`: a sample documentation [Next.js]() app
-- `apps/web`: a sample web [Next.js]() app
-- `packages/ui`: a stub React component library shared by both `web` and `docs` applications
-- `packages/config`: shared `tailwindcss`, `eslint` configurations (includes `eslint-config-next`, `eslint-config-prettier`, `eslint-plugin-prettier` etc..)
-- `packages/tsconfig`: `tsconfig.json`s which can be used by extending them throughout the monorepo
+```
+cd my-turborepo
+npm run dev
+```
+
+### Remote Caching
+
+Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+
+```
+cd my-turborepo
+npx turbo login
+```
+
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
+
+```
+npx turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)

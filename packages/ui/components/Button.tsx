@@ -1,9 +1,8 @@
-import React from "react";
-
-export const Button: React.FC = () => {
+import * as React from "react";
+export const Button = () => {
   return (
-    <button className="w-60 px-3 py-2 rounded drop-shadow-2xl text-white font-bold bg-gradient-to-r from-indigo-400 to-fuchsia-600 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-fuchsia-700 focus:ring-indigo-400 focus:ring-4 focus:ring-offset-2 transition-all duration-200">
-      Let&apos;s get it !
+    <button className="cursor-pointer rounded-md border border-gray-600 px-2 py-1 text-base text-gray-800 hover:bg-gray-600 hover:text-white">
+      Boop
     </button>
   );
 };
