@@ -1,6 +1,10 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import { Button } from "ui";
+import About from "@/components/home/About";
+import Who from "@/components/home/Who";
+import Horoscope from "@/components/home/Horoscope";
+import Reviews from "@/components/home/Reviews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="text-4xl font-bold text-green-500">
-          <p className="text-primary">Main</p>
-          <Button />
-        </div>
+        <About />
+        <Who />
+        <Horoscope />
+        <Reviews />
       </main>
     </>
   );
