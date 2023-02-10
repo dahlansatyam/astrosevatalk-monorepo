@@ -64,13 +64,13 @@ function Horoscope({}: Props) {
             <h2 className="text-center text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
               Horoscope Forecast
             </h2>
-            <h3 className="text-center text-base font-semibold sm:text-lg lg:text-xl">
+            <h3 className="text-center text-sm font-semibold sm:text-lg lg:text-xl">
               Choose your Moon sign and start reading your FREE Daily Horoscope
             </h3>
           </div>
-          <div className="grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
             {cards?.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="mx-auto">
                 <img src={item.src} alt={item.alt} />
               </div>
             ))}

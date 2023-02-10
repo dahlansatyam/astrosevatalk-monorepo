@@ -33,7 +33,7 @@ function Reviews({}: Props) {
             <h2 className="text-center text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
               Client Reviews
             </h2>
-            <h3 className="text-center text-base font-semibold sm:text-lg lg:text-xl">
+            <h3 className="text-center text-sm font-semibold sm:text-lg lg:text-xl">
               Here about us from our customers
             </h3>
           </div>
