@@ -9,7 +9,7 @@ type Props = {
 
 function Layout({ children }: Props) {
   return (
-    <div className="mx-auto font-[inter] antialiased">
+    <div className="mx-auto font-[roboto] antialiased">
       <Head>
         <title>AstroSevaTalk</title>
         <link rel="icon" href="/astrosevatalk-logo.svg" />

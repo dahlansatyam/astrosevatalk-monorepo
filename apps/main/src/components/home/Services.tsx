@@ -3,7 +3,7 @@ import { Section } from "../Layout";
 
 type Props = {};
 
-const shoppingList = [
+const services = [
   {
     name: "Compatibility",
     src: "/service-1.png",
@@ -20,26 +20,30 @@ const shoppingList = [
 
 function Services({}: Props) {
   return (
-    <div className="bg-[#FFF7E5] py-12">
+    <div className="bg-[#FFF7E5] py-12 lg:py-[38px]">
       <Section>
-        <div className="space-y-6">
-          <h2 className="text-center text-xl font-semibold sm:text-3xl lg:text-4xl">
+        <div className="">
+          <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
             Our Services
           </h2>
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {shoppingList.map((item, index) => (
+          <div className="mb-[42px] grid grid-cols-1 gap-6 lg:grid-cols-3">
+            {services.map((item, index) => (
               <div
                 key={index}
                 className="overflow-hidden rounded-2xl border-[3px] border-black"
               >
-                <img src={item.src} alt={item.name} className="mx-auto w-5/6" />
-                <p className="-mt-5 bg-black py-2 text-center text-2xl text-white">
+                <img
+                  src={item.src}
+                  alt={item.name}
+                  className="mx-auto h-[390px] w-full rounded-3xl border-[10px] border-white bg-transparent object-contain py-8"
+                />
+                <p className="-mt-5 bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
                   {item.name}
                 </p>
               </div>
             ))}
           </div>
-          <button className="mx-auto flex w-fit rounded-lg bg-black py-2 px-4 font-semibold text-white">
+          <button className="mx-auto flex w-fit rounded-lg bg-black py-3 px-6 font-semibold text-white lg:text-[28px]">
             View More
           </button>
         </div>

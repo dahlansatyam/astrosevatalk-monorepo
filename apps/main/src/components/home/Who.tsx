@@ -7,15 +7,15 @@ function Who({}: Props) {
   return (
     <div className="bg-[#FFF7E5] py-12">
       <Section>
-        <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-6 lg:space-y-0">
-          <div className="lg:w-1/3">
+        <div className="flex flex-col items-center space-y-4 lg:grid lg:grid-cols-12 lg:space-x-6 lg:space-y-0">
+          <div className="col-span-3">
             <img src="/who.png" alt="who" className="" />
           </div>
-          <div className="space-y-6 lg:w-2/3">
-            <h2 className="text-center text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
+          <div className="col-span-9 space-y-6">
+            <h2 className="mb-[18px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
               Who We Are?
             </h2>
-            <p>
+            <p className="text-justify text-base font-medium">
               Astrology, type of divination that involves the forecasting of
               earthly and human events through the observation and
               interpretation of the fixed stars, the Sun, the Moon, and the
@@ -42,6 +42,9 @@ function Who({}: Props) {
               nations. Though often regarded as a science throughout its
               history, astrology is widely considered today to be diametrica.
             </p>
+            <button className="mx-auto flex w-fit rounded-lg bg-black py-3 px-6 font-semibold text-white lg:text-2xl">
+              Contact Us
+            </button>
           </div>
         </div>
       </Section>

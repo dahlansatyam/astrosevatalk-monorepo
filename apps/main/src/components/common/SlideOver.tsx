@@ -1,7 +1,6 @@
 import React, { Fragment, ReactElement } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
-import Img from "./Img";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 interface Props {
@@ -28,7 +27,7 @@ function SlideOver({ open, close, children }: Props): ReactElement {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="absolute inset-0 transition-opacity bg-opacity-75 backdrop-filter backdrop-blur-sm" />
+            <Dialog.Overlay className="absolute inset-0 bg-opacity-75 backdrop-blur-sm backdrop-filter transition-opacity" />
           </Transition.Child>
           <div className="fixed w-[90%] ">
             <Transition.Child
@@ -50,7 +49,7 @@ function SlideOver({ open, close, children }: Props): ReactElement {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <div className="absolute top-0 right-0 flex justify-end w-[100%] pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4">
+                  <div className="absolute top-0 right-0 -ml-8 flex w-[100%] justify-end pt-4 pr-2 sm:-ml-10 sm:pr-4">
                     {/* <Link href="/" className="mx-4">
                       <Img
                         src={"mainLogo"}
@@ -63,16 +62,16 @@ function SlideOver({ open, close, children }: Props): ReactElement {
                     </Link> */}
                     <button
                       type="button"
-                      className="p-1 text-gray-900 rounded-md hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                      className="rounded-md p-1 text-gray-900 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300"
                       onClick={close}
                     >
                       <span className="sr-only">Close panel</span>
 
-                      <XMarkIcon className="w-6 h-6" aria-hidden="true" />
+                      <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
                 </Transition.Child>
-                <div className="flex flex-col py-6 overflow-y-scroll bg-[#F9F2E5] shadow-xl h-screen">
+                <div className="flex h-screen flex-col overflow-y-scroll bg-[#F9F2E5] py-6 shadow-xl">
                   <div className="relative mt-8 sm:px-6">{children}</div>
                 </div>
               </div>

@@ -69,16 +69,16 @@ function Navbar({}: Props) {
     <>
       <div className="bg-[url('/navbar-bg.png')]">
         <Section>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center py-2 lg:justify-between">
             <div className="">
-              <Link href="/" className="text-xl font-bold text-white">
+              <Link href="/" className="text-2xl font-black text-white">
                 <div className="flex items-center space-x-2">
-                  <img src="/main-logo.png" className="w-[6%]" />
+                  <img src="/main-logo.png" className="w-[60px]" />
                   <p>AstroSevaTalk</p>
                 </div>{" "}
               </Link>
             </div>
-            <div className="flex space-x-4 font-medium text-white">
+            <div className="hidden space-x-[27px] text-base font-bold text-white lg:flex">
               <p>AstrosevaTalk+</p>
               <p className="w-full">ZodiacSign</p>
               <p>Login</p>
