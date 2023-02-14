@@ -22,17 +22,17 @@ const corprate = [
   {
     id: 3,
     title: " Privacy Policy",
-    url: "/corprate/refund",
+    url: "/corprate/privacy",
   },
   {
     id: 4,
     title: " About Us",
-    url: "/corprate/refund",
+    url: "/corprate/about",
   },
   {
     id: 5,
     title: "Disclaimer",
-    url: "/corprate/refund",
+    url: "/corprate/disclaimer",
   },
 ];
 
@@ -138,7 +138,18 @@ function Footer({}: Props) {
             <div className="w-fit space-y-4">
               <p className="text-xl font-semibold">Corporate Info</p>
               <hr className="my-2   w-32 text-white" />
+
               <ul className="flex flex-col gap-4 ">
+                {corprate.map((item, index) => (
+                  <Link key={index} href={item?.url}>
+                    <li className="cursor-pointer hover:text-gray-100 hover:underline hover:underline-offset-2">
+                      {item?.title}
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+
+              {/* <ul className="flex flex-col gap-4 ">
                 <Link href="/corprate/refund">
                   <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
                     Refund & Cancellation Policy
@@ -164,7 +175,7 @@ function Footer({}: Props) {
                     Disclaimer
                   </li>
                 </Link>
-              </ul>
+              </ul> */}
             </div>
 
             <div className="w-fit space-y-4">
