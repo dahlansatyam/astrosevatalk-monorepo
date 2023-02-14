@@ -1,7 +1,40 @@
 import React from "react";
 import { Section } from "../Layout";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaPinterest,
+} from "react-icons/fa";
+
+const corprate = [
+  {
+    id: 1,
+    title: "Refund & Cancellation Policy",
+    url: "/corprate/refund",
+  },
+  {
+    id: 2,
+    title: "Terms & Conditions",
+    url: "/corprate/refund",
+  },
+  {
+    id: 3,
+    title: " Privacy Policy",
+    url: "/corprate/refund",
+  },
+  {
+    id: 4,
+    title: " About Us",
+    url: "/corprate/refund",
+  },
+  {
+    id: 5,
+    title: "Disclaimer",
+    url: "/corprate/refund",
+  },
+];
 
 type Props = {};
 
@@ -103,6 +136,38 @@ function Footer({}: Props) {
             </div>
 
             <div className="w-fit space-y-4">
+              <p className="text-xl font-semibold">Corporate Info</p>
+              <hr className="my-2   w-32 text-white" />
+              <ul className="flex flex-col gap-4 ">
+                <Link href="/corprate/refund">
+                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
+                    Refund & Cancellation Policy
+                  </li>
+                </Link>
+                <Link href="/corprate/refund">
+                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
+                    Terms & Conditions
+                  </li>
+                </Link>
+                <Link href="/corprate/privacy">
+                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
+                    Privacy Policy
+                  </li>
+                </Link>
+                <Link href="/corprate/about">
+                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
+                    About Us
+                  </li>
+                </Link>
+                <Link href="/corprate/disclaimer">
+                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
+                    Disclaimer
+                  </li>
+                </Link>
+              </ul>
+            </div>
+
+            <div className="w-fit space-y-4">
               <p className="text-xl font-semibold underline underline-offset-[6px]">
                 Contact Us
               </p>
@@ -111,20 +176,28 @@ function Footer({}: Props) {
                 <li className="">Email ID: contact@AstroSevaTalk.com</li>
               </ul>
               <div className="flex items-center justify-between gap-4 py-4 text-white">
-                <FaFacebook size={30} className="cursor-pointer" />
-                <FaInstagram
-                  size={30}
-                  className="
+                <Link href="https://www.facebook.com/profile.php?id=100089188385234">
+                  <FaFacebook size={30} className="cursor-pointer" />
+                </Link>
+                <Link href="https://www.instagram.com/astrosevatalk/">
+                  <FaInstagram
+                    size={30}
+                    className="
                   cursor-pointer
                 "
-                />
-                <FaTwitter size={30} className="cursor-pointer" />
-                <FaYoutube
-                  size={30}
-                  className="
+                  />
+                </Link>
+                <Link href="https://twitter.com/AstrosevaTalk">
+                  <FaTwitter size={30} className="cursor-pointer" />
+                </Link>
+                <Link href="https://in.pinterest.com/astrosevatalk/">
+                  <FaPinterest
+                    size={30}
+                    className="
                   cursor-pointer
                 "
-                />
+                  />
+                </Link>
               </div>
             </div>
           </div>
