@@ -108,7 +108,7 @@ function Footer({}: Props) {
           </ul>
         </div> */}
 
-          <div className="grid grid-cols-3">
+          <div className="grid lg:grid-cols-3">
             <div className="space-y-4">
               <p className="text-xl font-semibold underline underline-offset-[6px]">
                 Important Links
