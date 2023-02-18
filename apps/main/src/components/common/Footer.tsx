@@ -185,7 +185,7 @@ function Footer({}: Props) {
               </p>
               <ul className="flex flex-col gap-4 ">
                 <li className="">We are avilable to 24*7 chat support.</li>
-                <li className="">Email ID: contact@AstroSevaTalk.com</li>
+                <li className="">Email ID: Support@astrosevatalk.com</li>
               </ul>
               <div className="grid grid-cols-4 items-center justify-between gap-4 py-4 text-white">
                 <Link href="https://www.facebook.com/profile.php?id=100089188385234">
