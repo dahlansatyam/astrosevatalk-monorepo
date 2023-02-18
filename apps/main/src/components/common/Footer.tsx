@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaPinterest,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const corprate = [
@@ -186,7 +187,7 @@ function Footer({}: Props) {
                 <li className="">We are avilable to 24*7 chat support.</li>
                 <li className="">Email ID: contact@AstroSevaTalk.com</li>
               </ul>
-              <div className="flex items-center justify-between gap-4 py-4 text-white">
+              <div className="grid grid-cols-4 items-center justify-between gap-4 py-4 text-white">
                 <Link href="https://www.facebook.com/profile.php?id=100089188385234">
                   <FaFacebook size={30} className="cursor-pointer" />
                 </Link>
@@ -208,6 +209,9 @@ function Footer({}: Props) {
                   cursor-pointer
                 "
                   />
+                </Link>
+                <Link href="https://www.linkedin.com/in/astrosevatalk/">
+                  <FaLinkedin size={30} className="cursor-pointer" />
                 </Link>
               </div>
             </div>
