@@ -1,10 +1,10 @@
-import ChatCard from "@/components/astrolger-chat/ChatCard";
-import Hero from "@/components/astrolger-chat/Hero";
-import ChatFaq from "@/components/Faqandconsult/ChatFaq";
-import Consulttation from "@/components/Faqandconsult/Consulttation";
+import React from "react";
 import { Section } from "@/components/Layout";
 import { HomeIcon, StarIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import Hero from "@/components/astrologer-call/Hero";
+import TalkCard from "@/components/astrologer-call/TalkCard";
+import Consulttation from "@/components/Faqandconsult/Consulttation";
+import TalkFaq from "@/components/Faqandconsult/TalkFaq";
 
 type Props = {};
 
@@ -12,7 +12,7 @@ const astrologerList = [
   1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6,
 ];
 
-function AstrologerChat({}: Props) {
+const AstrologerCall = ({}: Props) => {
   return (
     <div>
       <Hero />
@@ -22,16 +22,18 @@ function AstrologerChat({}: Props) {
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
             <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
-              Chat With Astrologer
+              {" "}
+              Talk To Astrologer
             </p>
           </div>
         </Section>
       </div>
-      <ChatCard astrologerList={astrologerList} />
+      <TalkCard astrologerList={astrologerList} />
+
       <Consulttation />
-      <ChatFaq />
+      <TalkFaq />
     </div>
   );
-}
+};
 
-export default AstrologerChat;
+export default AstrologerCall;
