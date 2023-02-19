@@ -32,5 +32,5 @@ jobs:
           server: ${{secrets.SERVER}}
           username: ${{secrets.USERNAME}}
           password: ${{secrets.PASSWORD}}
-          dangerous-clean-slate: true
+          # dangerous-clean-slate: true
           local-dir: ./apps/main/out/
