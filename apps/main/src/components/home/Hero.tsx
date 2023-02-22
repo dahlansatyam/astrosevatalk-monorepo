@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
+import AppointmentsHero from "./AppoinmentsHero";
+import Appointments from "./Appointments";
 
 type Props = {};
 
@@ -9,11 +11,11 @@ const links = [
     url: "/",
   },
   {
-    name: "About us",
+    name: "Chat With Astrologer",
     url: "",
   },
   {
-    name: "Services",
+    name: "Talk To Astrologer",
     url: "",
   },
   {
@@ -33,11 +35,11 @@ const links = [
 function Hero({}: Props) {
   const router = useRouter();
   return (
-    <div className="h-screen bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
+    <div className=" flex flex-col justify-between items-center space-y-12 bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
       <div className="mx-auto hidden max-w-5xl items-center justify-center space-x-[30px] lg:flex">
         {links.map((item) => (
           <p
-            className={`text-[20px] font-bold text-white ${
+            className={`cursor-pointer text-[20px] font-bold text-white ${
               router.pathname === item.url
                 ? "underline decoration-[#B62022] underline-offset-8"
                 : ""
@@ -55,6 +57,7 @@ function Hero({}: Props) {
           Let the stars Guide you
         </p>
       </div>
+      <AppointmentsHero />
     </div>
   );
 }
