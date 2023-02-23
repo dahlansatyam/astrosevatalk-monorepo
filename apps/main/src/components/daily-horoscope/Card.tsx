@@ -67,21 +67,21 @@ const Card = (props: Props) => {
       <Section>
         <div className="flex flex-col space-y-4 text-justify">
           <p>
-            Looking for today's horoscope? Or yesterday's? Well, on Astrotalk we
-            have covered everything right from Daily horoscope to weekly to
-            monthly horoscope. What is the use of one's Daily horoscope you may
-            ask? Well, as per our astrologers, the daily horoscope is one of the
-            ways that you can use to plan out your day. As per astrology, our
-            day to day life is influenced by the movements of planets, as they
-            constantly shift their positions from one sign to another. The
-            movement can bring both positive and negative influences in one's
-            life, and you knowing such things in advance helps you in
-            safeguarding yourself from the uncertainties.
+            Looking for today's horoscope? Or yesterday's? Well, on
+            Astrosevatalk we have covered everything right from Daily horoscope
+            to weekly to monthly horoscope. What is the use of one's Daily
+            horoscope you may ask? Well, as per our astrologers, the daily
+            horoscope is one of the ways that you can use to plan out your day.
+            As per astrology, our day to day life is influenced by the movements
+            of planets, as they constantly shift their positions from one sign
+            to another. The movement can bring both positive and negative
+            influences in one's life, and you knowing such things in advance
+            helps you in safeguarding yourself from the uncertainties.
           </p>
           <p>
             So reading Today's horoscope is like a healthy habit one can
             consider adopting as it shall help in changing the outcomes of your
-            life. The daily horoscope on Astrotalk is prepared by expert
+            life. The daily horoscope on Astrosevatalk is prepared by expert
             astrologers and thus is very insightful. The daily horoscope not
             only tells you what's coming for you in the future but also allows
             you remedies that you can adopt to tackle anything negative. The
