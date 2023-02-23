@@ -63,7 +63,7 @@ const card = [
 
 const Card = (props: Props) => {
   return (
-    <div className="py-10">
+    <div className="py-8">
       <Section>
         <div className="flex flex-col space-y-4 text-justify">
           <p>

@@ -18,7 +18,7 @@ const appointment = [
   {
     name: "Live Astrologers",
     src: "/Appoinmentshero/icon-03.svg",
-    url: "/talk-astrologer",
+    url: "/Live-astrologer",
   },
   {
     name: "Live video chat",

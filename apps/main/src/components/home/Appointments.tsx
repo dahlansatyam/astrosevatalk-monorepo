@@ -18,7 +18,7 @@ const appointment = [
   {
     name: "Live Astrologers",
     src: "/icon-03.png",
-    url: "/talk-astrologer",
+    url: "/live-astrologer",
   },
   {
     name: "Live video chat",
@@ -47,7 +47,7 @@ function Appointments({}: Props) {
                   alt={item.name}
                   className="mx-auto h-[140px] w-[140px]"
                 />
-                <p className="text-center items-center font-[georgia] text-sm font-[700]  text-[#D3B160] lg:text-[14px]">
+                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-[#D3B160] lg:text-[14px]">
                   {item.name}
                 </p>
               </Link>

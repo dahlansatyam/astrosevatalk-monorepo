@@ -121,7 +121,7 @@ function Footer({}: Props) {
                 <Link href="/panchang">
                   <li className="cursor-pointer">panchang</li>
                 </Link>
-                <Link href="liveastrologer">
+                <Link href="/live-astrologer">
                   <li className="cursor-pointer">live-astrologer</li>
                 </Link>
                 <Link href="chat-astrologer">
@@ -132,6 +132,9 @@ function Footer({}: Props) {
                 </Link>
                 <Link href="freekundli">
                   <li className="cursor-pointer">FreeKundli</li>
+                </Link>
+                <Link href="/daily-horoscope">
+                  <li className="cursor-pointer">Daily Horoscope</li>
                 </Link>
               </ul>
             </div>

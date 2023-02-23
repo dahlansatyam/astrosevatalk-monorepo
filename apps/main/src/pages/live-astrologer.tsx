@@ -1,15 +1,14 @@
 import React from "react";
-import Hero from "@/components/daily-horoscope/Hero";
 import { HomeIcon, StarIcon } from "@heroicons/react/24/solid";
 import { Section } from "@/components/Layout";
-import Card from "@/components/daily-horoscope/Card";
-import LiveConsultation from "@/components/Faqandconsult/LiveConsultation";
+import Hero from "@/components/live-astrologer/Hero";
+import Card from "@/components/live-astrologer/Card";
+import LiveConsulttation from "@/components/Faqandconsult/LiveConsultation";
 import LiveFaq from "@/components/Faqandconsult/LiveFaq";
-import AboutHoroscope from "@/components/daily-horoscope/AboutHoroscope";
 
 type Props = {};
 
-const Dailyhoroscope = (props: Props) => {
+const Liveastrologer = (props: Props) => {
   return (
     <div>
       <Hero />
@@ -23,11 +22,10 @@ const Dailyhoroscope = (props: Props) => {
         </div>
       </Section>
       <Card />
-      <AboutHoroscope />
-      <LiveConsultation />
+      <LiveConsulttation />
       <LiveFaq />
     </div>
   );
 };
 
-export default Dailyhoroscope;
+export default Liveastrologer;

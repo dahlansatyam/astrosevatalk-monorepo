@@ -20,8 +20,8 @@ const links = [
     url: "/talk-astrologer",
   },
   {
-    name: "Appointments",
-    url: "",
+    name: "Live Astrologer",
+    url: "/live-astrologer",
   },
   {
     name: "Daily Horoscope",

@@ -3,7 +3,7 @@ import { Section } from "../Layout";
 
 type Props = {};
 
-const HoroscopeConsulttation = (props: Props) => {
+const LiveConsulttation = (props: Props) => {
   return (
     <div>
       <div className="bg-[url('/chat-bg.svg')] bg-cover py-8 lg:py-[49px]">
@@ -70,4 +70,4 @@ const HoroscopeConsulttation = (props: Props) => {
   );
 };
 
-export default HoroscopeConsulttation;
+export default LiveConsulttation;
