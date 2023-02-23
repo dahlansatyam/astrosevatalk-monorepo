@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import AppointmentsHero from "./AppoinmentsHero";
 import Appointments from "./Appointments";
+import Link from "next/link";
 
 type Props = {};
 
@@ -12,19 +13,19 @@ const links = [
   },
   {
     name: "Chat With Astrologer",
-    url: "",
+    url: "/chat-astrologer",
   },
   {
     name: "Talk To Astrologer",
-    url: "",
+    url: "/talk-astrologer",
   },
   {
     name: "Appointments",
     url: "",
   },
   {
-    name: "Shop",
-    url: "",
+    name: "Daily Horoscope",
+    url: "/daily-horoscope",
   },
   {
     name: "Learn",
@@ -35,18 +36,20 @@ const links = [
 function Hero({}: Props) {
   const router = useRouter();
   return (
-    <div className=" flex flex-col justify-between items-center space-y-12 bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
+    <div className=" flex flex-col items-center justify-between space-y-12 bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
       <div className="mx-auto hidden max-w-5xl items-center justify-center space-x-[30px] lg:flex">
         {links.map((item) => (
-          <p
-            className={`cursor-pointer text-[20px] font-bold text-white ${
-              router.pathname === item.url
-                ? "underline decoration-[#B62022] underline-offset-8"
-                : ""
-            }`}
-          >
-            {item.name}
-          </p>
+          <Link href={item?.url}>
+            <p
+              className={`cursor-pointer text-[20px] font-bold text-white ${
+                router.pathname === item.url
+                  ? "underline decoration-[#B62022] underline-offset-8"
+                  : ""
+              }`}
+            >
+              {item.name}
+            </p>
+          </Link>
         ))}
       </div>
       <div className="flex h-full flex-col items-center justify-center text-center">
