@@ -12,7 +12,7 @@ function Hero({}: Props) {
         </p>
       </div>
       <div className="col-span-3">
-        <img src="/chat-hero.svg" />
+        <img src="/Heroicons/chat-hero.svg" />
       </div>
     </div>
   );
