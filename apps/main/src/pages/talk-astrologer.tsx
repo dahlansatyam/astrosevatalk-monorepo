@@ -5,6 +5,7 @@ import Hero from "@/components/astrologer-call/Hero";
 import TalkCard from "@/components/astrologer-call/TalkCard";
 import Consulttation from "@/components/Faqandconsult/Consulttation";
 import TalkFaq from "@/components/Faqandconsult/TalkFaq";
+import Alert from "@/components/astrologer-call/Alert";
 
 type Props = {};
 
@@ -32,6 +33,7 @@ const AstrologerCall = ({}: Props) => {
 
       <Consulttation />
       <TalkFaq />
+      <Alert />
     </div>
   );
 };

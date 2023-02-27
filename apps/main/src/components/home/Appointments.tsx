@@ -23,7 +23,7 @@ const appointment = [
   {
     name: "Live video chat",
     src: "/icon-04.png",
-    url: "/talk-astrologer",
+    url: "/videochat-astrologer",
   },
 ];
 

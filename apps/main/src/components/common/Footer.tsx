@@ -136,6 +136,9 @@ function Footer({}: Props) {
                 <Link href="/daily-horoscope">
                   <li className="cursor-pointer">Daily Horoscope</li>
                 </Link>
+                <Link href="/videochat-astrologer">
+                  <li className="cursor-pointer">Live Video Chat</li>
+                </Link>
               </ul>
             </div>
 

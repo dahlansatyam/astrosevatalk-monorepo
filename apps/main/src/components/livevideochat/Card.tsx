@@ -92,9 +92,12 @@ const Card = (props: Props) => {
                   alt=""
                 />
               </div>
-              <div className="relative m-4 w-16 rounded-2xl bg-[#CDB06F]">
-                <p className="text-center font-bold">
-                  Live <span className="text-red-900">.</span>
+              <div className="relative m-4 flex  justify-between  ">
+                <p className="w-16 rounded-2xl bg-[#CDB06F] text-center font-bold">
+                  Go Live
+                </p>
+                <p className="w-8 rounded-2xl bg-[#CDB06F] text-center font-bold">
+                  Go
                 </p>
               </div>
               <div className="relative mt-56 bg-black/50">

@@ -23,7 +23,7 @@ const appointment = [
   {
     name: "Live video chat",
     src: "/Appoinmentshero/icon-04.svg",
-    url: "/talk-astrologer",
+    url: "/videochat-astrologer",
   },
 ];
 
@@ -35,12 +35,12 @@ function AppointmentsHero({}: Props) {
           {/* <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
             Appointments
           </h2> */}
-          <div className="grid  gap-6 md:gap-6 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid  gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-6">
             {appointment?.map((item, index) => (
               <Link
                 key={index}
                 href={item?.url}
-                className="flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] bg-[#e4dede] p-4"
+                className="bg-white/20 flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] p-4"
               >
                 <img
                   src={item.src}

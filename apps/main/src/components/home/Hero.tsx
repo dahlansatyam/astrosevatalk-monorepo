@@ -28,6 +28,10 @@ const links = [
     url: "/daily-horoscope",
   },
   {
+    name: "Live Video Chat",
+    url: "/videochat-astrologer",
+  },
+  {
     name: "Learn",
     url: "",
   },
@@ -37,7 +41,7 @@ function Hero({}: Props) {
   const router = useRouter();
   return (
     <div className=" flex flex-col items-center justify-between space-y-12 bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
-      <div className="mx-auto hidden max-w-5xl items-center justify-center space-x-[30px] lg:flex">
+      <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
         {links.map((item) => (
           <Link href={item?.url}>
             <p
