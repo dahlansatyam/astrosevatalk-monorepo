@@ -1,4 +1,5 @@
 import ChatCard from "@/components/astrolger-chat/ChatCard";
+import ChatintakeForm from "@/components/astrolger-chat/ChatintakeForm";
 import Hero from "@/components/astrolger-chat/Hero";
 import ChatFaq from "@/components/Faqandconsult/ChatFaq";
 import Consulttation from "@/components/Faqandconsult/Consulttation";
@@ -30,6 +31,7 @@ function AstrologerChat({}: Props) {
       <ChatCard astrologerList={astrologerList} />
       <Consulttation />
       <ChatFaq />
+      <ChatintakeForm />
     </div>
   );
 }

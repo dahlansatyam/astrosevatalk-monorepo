@@ -32,9 +32,9 @@ function Appointments({}: Props) {
     <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[46px]">
       <Section>
         <div className="">
-          {/* <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+          <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
             Appointments
-          </h2> */}
+          </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
             {appointment?.map((item, index) => (
               <Link

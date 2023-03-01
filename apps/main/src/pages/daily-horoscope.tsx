@@ -4,7 +4,7 @@ import { HomeIcon, StarIcon } from "@heroicons/react/24/solid";
 import { Section } from "@/components/Layout";
 import Card from "@/components/daily-horoscope/Card";
 import LiveConsultation from "@/components/Faqandconsult/LiveConsultation";
-import LiveFaq from "@/components/Faqandconsult/LiveFaq";
+import HorscopeFaq from "@/components/Faqandconsult/HorscopeFaq";
 import AboutHoroscope from "@/components/daily-horoscope/AboutHoroscope";
 
 type Props = {};
@@ -25,7 +25,7 @@ const Dailyhoroscope = (props: Props) => {
       <Card />
       <AboutHoroscope />
       <LiveConsultation />
-      <LiveFaq />
+      <HorscopeFaq />
     </div>
   );
 };
