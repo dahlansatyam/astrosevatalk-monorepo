@@ -6,6 +6,7 @@ import Card from "@/components/daily-horoscope/Card";
 import LiveConsultation from "@/components/Faqandconsult/LiveConsultation";
 import HorscopeFaq from "@/components/Faqandconsult/HorscopeFaq";
 import AboutHoroscope from "@/components/daily-horoscope/AboutHoroscope";
+import Check from "@/components/daily-horoscope/Check";
 
 type Props = {};
 
@@ -25,6 +26,7 @@ const Dailyhoroscope = (props: Props) => {
       <Card />
       <AboutHoroscope />
       <LiveConsultation />
+      <Check />
       <HorscopeFaq />
     </div>
   );

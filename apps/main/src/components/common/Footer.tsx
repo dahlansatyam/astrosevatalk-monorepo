@@ -139,6 +139,9 @@ function Footer({}: Props) {
                 <Link href="/videochat-astrologer">
                   <li className="cursor-pointer">Live Video Chat</li>
                 </Link>
+                <Link href="/horoscopesigns/aries">
+                  <li className="cursor-pointer">Aries</li>
+                </Link>
               </ul>
             </div>
 

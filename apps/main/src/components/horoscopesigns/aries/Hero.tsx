@@ -15,7 +15,7 @@ function Hero({}: Props) {
         </p>
       </div>
       <div className="col-span-3">
-        <img src="/Heroicons/call-hero.svg" />
+        <img src="/Horoscopeicons/Aries 1.svg" />
       </div>
     </div>
   );
