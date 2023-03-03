@@ -142,6 +142,12 @@ function Footer({}: Props) {
                 <Link href="/horoscopesigns/aries">
                   <li className="cursor-pointer">Aries</li>
                 </Link>
+                <Link href="/kundli/free-kundli">
+                  <li className="cursor-pointer">Free Kundli</li>
+                </Link>
+                <Link href="/kundli/kundli-matching">
+                  <li className="cursor-pointer">Kundli Matching</li>
+                </Link>
               </ul>
             </div>
 

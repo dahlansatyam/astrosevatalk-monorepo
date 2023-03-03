@@ -32,6 +32,14 @@ const links = [
     url: "/videochat-astrologer",
   },
   {
+    name: "Free Kundli",
+    url: "/kundli/free-kundli",
+  },
+  {
+    name: "Kundli Matching",
+    url: "/kundli/kundli-matching",
+  },
+  {
     name: "Learn",
     url: "",
   },
