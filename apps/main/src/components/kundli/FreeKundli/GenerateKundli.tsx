@@ -179,7 +179,7 @@ const GenerateKundli = (props: Props) => {
                     <div className="items-center">
                       <button
                         type="submit"
-                        className="w-full   rounded-xl bg-[#F9B800] py-2  px-5 font-semibold text-black"
+                        className="w-full rounded-xl bg-[#D3B160] py-2  px-5 font-semibold text-black"
                       >
                         Genertate the Kundli
                       </button>

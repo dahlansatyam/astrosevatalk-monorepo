@@ -15,12 +15,12 @@ const ConnectCard = (props: Props) => {
           </div>
           <div className="flex flex-col items-center justify-center gap-4 py-6 sm:flex-row">
             <Link href="/talk-astrologer">
-              <button className=" rounded-3xl bg-[#e7bb55] py-2 px-5 text-[22px] font-semibold text-white">
+              <button className=" rounded-3xl bg-[#D3B160] py-2 px-5 text-[22px] font-semibold text-white">
                 Talk To Astrologer
               </button>
             </Link>
             <Link href="/chat-astrologer">
-              <button className=" rounded-3xl bg-[#e7bb55] py-2 px-5 text-[22px] font-semibold text-white">
+              <button className=" rounded-3xl bg-[#D3B160] py-2 px-5 text-[22px] font-semibold text-white">
                 Chat With Astrologer
               </button>
             </Link>
