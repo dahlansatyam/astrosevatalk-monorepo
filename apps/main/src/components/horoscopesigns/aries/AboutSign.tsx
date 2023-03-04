@@ -1,13 +1,15 @@
 import React from "react";
 import { Section } from "@/components/Layout";
 
-type Props = {};
+type Props = {
+  horoscopeType: string | string[] | undefined;
+};
 
-const AboutSign = (props: Props) => {
+const AboutSign = ({ horoscopeType }: Props) => {
   return (
     <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 md:py-16">
       <Section>
-        <div className="flex flex-col gap-6 md:space-x-16 md:flex-row">
+        <div className="flex flex-col gap-6 md:flex-row md:space-x-16">
           <div className="flex flex-col space-y-3">
             <div className="flex flex-col gap-2">
               <p className="text-[22px] font-bold">Select other Sign</p>
@@ -18,7 +20,7 @@ const AboutSign = (props: Props) => {
                   id=""
                 >
                   <option value="zodic">Select other Sign</option>
-                  <option value="zodic">Aries</option>
+                  <option value="aries">Aries</option>
                   <option value="zodic">zodic</option>
                   <option value="zodic">zodic</option>
                   <option value="zodic">zodic</option>
@@ -43,7 +45,9 @@ const AboutSign = (props: Props) => {
           <div className="rounded-xl border-4 border-black bg-[#FFF7E5] py-5">
             <div>
               <div className="flex flex-col items-center">
-                <p className="text-[32px] font-bold">Aries Daily Horoscope</p>
+                <p className="text-[32px] font-bold">
+                  {horoscopeType} Daily Horoscope
+                </p>
                 <p className="text-[22px]">(March 21 - April 21)</p>
               </div>
 

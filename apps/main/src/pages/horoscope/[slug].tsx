@@ -4,21 +4,27 @@ import AboutSign from "@/components/horoscopesigns/aries/AboutSign";
 import Compatability from "@/components/horoscopesigns/aries/Compatability";
 import Hero from "@/components/horoscopesigns/aries/Hero";
 import SignsCard from "@/components/horoscopesigns/aries/SignsCard";
+import { useRouter } from "next/router";
 import React from "react";
 
 type Props = {};
 
-const aries = (props: Props) => {
+const SingleHoroscope = (props: Props) => {
+  const router = useRouter();
+
+  const horoscopeType = router.query.slug;
+
+  console.log("horoscopr", horoscopeType);
   return (
     <div>
-      <Hero />
-      <AboutSign />
+      <Hero horoscopeType={horoscopeType} />
+      <AboutSign horoscopeType={horoscopeType} />
       <ConnectCard />
       <HorscopeFaq />
       <SignsCard />
-      <Compatability />
+      <Compatability horoscopeType={horoscopeType} />
     </div>
   );
 };
 
-export default aries;
+export default SingleHoroscope;
