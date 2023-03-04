@@ -15,7 +15,7 @@ function Hero({}: Props) {
         </p>
       </div>
       <div className="col-span-3">
-        <img src="/kundliicons/kundli.svg" />
+        <img src="/kundliicons/Freekundliicon.svg" />
       </div>
     </div>
   );

@@ -55,13 +55,22 @@ const Matching = (props: Props) => {
             </div>
             <div className="h-[464px]  rounded-3xl border-2 border-[#A9A9A9]">
               <div>
-                <div className="flex flex-col items-center justify-center gap-3 py-56">
-                  <p className="text-center text-[22px]">
-                    Please Log in to see your saved Kundli
-                  </p>
-                  <button className="rounded-md bg-[#F9B800] px-2 py-1 font-bold">
-                    Login
-                  </button>
+                <div className="flex flex-col items-center">
+                  <div>
+                    <img
+                      className=""
+                      src="/kundliicons/kundlimatch.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <p className="text-center text-[16px]">
+                      Please Log in to see your saved Kundli
+                    </p>
+                    <button className="rounded-md bg-[#F9B800] px-2 py-1 font-bold">
+                      Login
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

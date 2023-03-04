@@ -72,7 +72,7 @@ const SignsCard = ({}: Props) => {
         <div className="flex flex-col space-y-6 py-8 ">
           <div>
             <p className="text-center text-4xl font-bold ">
-              Read For Other Signs{" "}
+              Read For Other Signs
             </p>
           </div>
 
