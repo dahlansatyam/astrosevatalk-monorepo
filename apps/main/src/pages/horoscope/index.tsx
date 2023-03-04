@@ -10,7 +10,7 @@ import Check from "@/components/daily-horoscope/Check";
 
 type Props = {};
 
-const Dailyhoroscope = (props: Props) => {
+const Horoscope = (props: Props) => {
   return (
     <div>
       <Hero />
@@ -32,4 +32,4 @@ const Dailyhoroscope = (props: Props) => {
   );
 };
 
-export default Dailyhoroscope;
+export default Horoscope;

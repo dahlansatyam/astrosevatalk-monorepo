@@ -25,7 +25,7 @@ const links = [
   },
   {
     name: "Daily Horoscope",
-    url: "/daily-horoscope",
+    url: "/horoscope",
   },
   {
     name: "Live Video Chat",
