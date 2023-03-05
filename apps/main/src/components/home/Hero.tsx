@@ -40,6 +40,10 @@ const links = [
     url: "/kundli/kundli-matching",
   },
   {
+    name: "Panchang",
+    url: "/panchang",
+  },
+  {
     name: "Learn",
     url: "",
   },
