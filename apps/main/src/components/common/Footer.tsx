@@ -37,6 +37,87 @@ const corprate = [
   },
 ];
 
+const importantlinks = [
+  {
+    id: 1,
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "panchang",
+    url: "/panchang",
+  },
+  {
+    id: 3,
+    title: "live-astrologer",
+    url: "/live-astrologer",
+  },
+  {
+    id: 4,
+    title: "ChatAstrologer",
+    url: "/chat-astrologer",
+  },
+  {
+    id: 5,
+    title: "TalkAstrologer",
+    url: "/corprate/disclaimer",
+  },
+  {
+    id: 6,
+    title: "FreeKundli",
+    url: "/freekundli",
+  },
+  {
+    id: 7,
+    title: "Daily Horoscope",
+    url: "/horoscope",
+  },
+  {
+    id: 8,
+    title: "Live Video Chat",
+    url: "/videochat-astrologer",
+  },
+  {
+    id: 9,
+    title: "Aries",
+    url: "/horoscopesigns/aries",
+  },
+  {
+    id: 10,
+    title: "Free Kundli",
+    url: "/kundli/free-kundli",
+  },
+  {
+    id: 11,
+    title: "Kundli Matching",
+    url: "/kundli/kundli-matching",
+  },
+];
+
+const social = [
+  {
+    icon: <FaFacebook size={30} />,
+    url: "https://www.facebook.com/profile.php?id=100089188385234",
+  },
+  {
+    icon: <FaInstagram size={30} />,
+    url: "https://www.instagram.com/astrosevatalk/",
+  },
+  {
+    icon: <FaTwitter size={30} />,
+    url: "https://twitter.com/AstrosevaTalk",
+  },
+  {
+    icon: <FaPinterest size={30} />,
+    url: "https://in.pinterest.com/astrosevatalk/",
+  },
+  {
+    icon: <FaLinkedin size={30} />,
+    url: "https://www.linkedin.com/in/astrosevatalk/",
+  },
+];
+
 type Props = {};
 
 function Footer({}: Props) {
@@ -109,45 +190,18 @@ function Footer({}: Props) {
         </div> */}
 
           <div className="grid lg:grid-cols-3">
-            <div className="space-y-4">
-              <p className="text-xl font-semibold underline underline-offset-[6px]">
-                Important Links
-              </p>
-              <ul className="grid grid-cols-2 gap-4 ">
-                <Link href="/">
-                  {" "}
-                  <li className="cursor-pointer">Home</li>
-                </Link>
-                <Link href="/panchang">
-                  <li className="cursor-pointer">panchang</li>
-                </Link>
-                <Link href="/live-astrologer">
-                  <li className="cursor-pointer">live-astrologer</li>
-                </Link>
-                <Link href="chat-astrologer">
-                  <li className="cursor-pointer">ChatAstrologer</li>
-                </Link>
-                <Link href="talk-astrologer">
-                  <li className="cursor-pointer">TalkAstrologer</li>
-                </Link>
-                <Link href="freekundli">
-                  <li className="cursor-pointer">FreeKundli</li>
-                </Link>
-                <Link href="/horoscope">
-                  <li className="cursor-pointer">Daily Horoscope</li>
-                </Link>
-                <Link href="/videochat-astrologer">
-                  <li className="cursor-pointer">Live Video Chat</li>
-                </Link>
-                <Link href="/horoscopesigns/aries">
-                  <li className="cursor-pointer">Aries</li>
-                </Link>
-                <Link href="/kundli/free-kundli">
-                  <li className="cursor-pointer">Free Kundli</li>
-                </Link>
-                <Link href="/kundli/kundli-matching">
-                  <li className="cursor-pointer">Kundli Matching</li>
-                </Link>
+            <div className="w-fit space-y-4">
+              <p className="text-xl font-semibold">Important Links</p>
+              <hr className="my-2   w-32 text-white" />
+
+              <ul className="flex flex-col gap-4 ">
+                {importantlinks.map((item, index) => (
+                  <Link key={index} href={item?.url}>
+                    <li className="cursor-pointer hover:text-gray-100 hover:underline hover:underline-offset-2">
+                      {item?.title}
+                    </li>
+                  </Link>
+                ))}
               </ul>
             </div>
 
@@ -164,40 +218,28 @@ function Footer({}: Props) {
                   </Link>
                 ))}
               </ul>
-
-              {/* <ul className="flex flex-col gap-4 ">
-                <Link href="/corprate/refund">
-                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
-                    Refund & Cancellation Policy
-                  </li>
-                </Link>
-                <Link href="/corprate/refund">
-                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
-                    Terms & Conditions
-                  </li>
-                </Link>
-                <Link href="/corprate/privacy">
-                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
-                    Privacy Policy
-                  </li>
-                </Link>
-                <Link href="/corprate/about">
-                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
-                    About Us
-                  </li>
-                </Link>
-                <Link href="/corprate/disclaimer">
-                  <li className="cursor-pointer hover:text-primary hover:underline hover:underline-offset-2">
-                    Disclaimer
-                  </li>
-                </Link>
-              </ul> */}
             </div>
 
             <div className="w-fit space-y-4">
-              <p className="text-xl font-semibold underline underline-offset-[6px]">
-                Contact Us
-              </p>
+              <p className="text-xl font-semibold">Contact Us</p>
+              <hr className="my-2   w-32 text-white" />
+              <ul className="flex flex-col gap-4 ">
+                <li className="">We are avilable to 24*7 chat support.</li>
+                <li className="">Email ID: Support@astrosevatalk.com</li>
+              </ul>
+
+              <ul className="grid grid-cols-4 items-center justify-between gap-4 py-4 text-white">
+                {social.map((item, index) => (
+                  <Link key={index} href={item?.url}>
+                    <li className="cursor-pointer">{item?.icon}</li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
+
+            {/* <div className="w-fit space-y-4">
+              <p className="text-xl font-semibold">Contact Us</p>
+              <hr className="my-2   w-32 text-white" />
               <ul className="flex flex-col gap-4 ">
                 <li className="">We are avilable to 24*7 chat support.</li>
                 <li className="">Email ID: Support@astrosevatalk.com</li>
@@ -229,7 +271,7 @@ function Footer({}: Props) {
                   <FaLinkedin size={30} className="cursor-pointer" />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Section>
