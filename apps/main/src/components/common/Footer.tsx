@@ -93,6 +93,11 @@ const importantlinks = [
     title: "Kundli Matching",
     url: "/kundli/kundli-matching",
   },
+  {
+    id: 12,
+    title: "Shubh Muhurat",
+    url: "/muhurat",
+  },
 ];
 
 const social = [

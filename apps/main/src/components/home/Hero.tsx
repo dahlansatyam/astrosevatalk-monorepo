@@ -44,6 +44,14 @@ const links = [
     url: "/panchang",
   },
   {
+    name: "Shubh Muhurat",
+    url: "/muhurat",
+  },
+  {
+    name: "Compatibility",
+    url: "/compaitablity",
+  },
+  {
     name: "Learn",
     url: "",
   },
