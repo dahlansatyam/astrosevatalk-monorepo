@@ -9,6 +9,7 @@ import ImportenceofMuhurat from "@/components/muhurat/ImportenceofMuhurat";
 import Diffrentmuhurat from "@/components/muhurat/Diffrentmuhurat";
 import MustknowFactor from "@/components/muhurat/MustknowFactor";
 import Yoga from "@/components/muhurat/Yoga";
+import MuhuratFaq from "@/components/Faqandconsult/MuhuratFaq";
 
 type Props = {};
 
@@ -29,6 +30,7 @@ const Muhurat = (props: Props) => {
       <Diffrentmuhurat />
       <MustknowFactor />
       <Yoga />
+      <MuhuratFaq />
       <Check />
       <Horoscopeswipe />
     </div>
