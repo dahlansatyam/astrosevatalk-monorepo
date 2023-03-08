@@ -29,7 +29,7 @@ const appointment = [
 
 function AppointmentsHero({}: Props) {
   return (
-    <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[46px]">
+    <div className="py-8">
       <Section>
         <div className="">
           {/* <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
@@ -40,7 +40,7 @@ function AppointmentsHero({}: Props) {
               <Link
                 key={index}
                 href={item?.url}
-                className="bg-white/20 flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] p-4"
+                className="bg-white/5 flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] p-4"
               >
                 <img
                   src={item.src}

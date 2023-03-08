@@ -2,6 +2,8 @@ import React from "react";
 import { HomeIcon, StarIcon } from "@heroicons/react/24/solid";
 import { Section } from "@/components/Layout";
 import Hero from "@/components/Compatibility/Hero";
+import About from "@/components/Compatibility/About";
+import Zoidic from "@/components/Compatibility/Zoidic";
 
 type Props = {};
 
@@ -18,6 +20,8 @@ const Compaitablity = (props: Props) => {
             </p>
           </div>
         </Section>
+        <About />
+        <Zoidic />
       </div>
     </div>
   );
