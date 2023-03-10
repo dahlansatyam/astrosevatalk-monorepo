@@ -12,6 +12,7 @@ import Tithi from "@/components/panchang/Tithi";
 import Nakshtra from "@/components/panchang/Nakshtra";
 import Yoga from "@/components/panchang/Yoga";
 import Karna from "@/components/panchang/Karna";
+import AsubhMuhurat from "@/components/panchang/AsubhMuhurat";
 
 type Props = {};
 
@@ -29,6 +30,7 @@ const Panchang = (props: Props) => {
       </Section>
       <About />
       <FormPanchang />
+      <AsubhMuhurat />
       <WhypanchangUsed />
       <Vaar />
       <Tithi />

@@ -92,7 +92,7 @@ const Compatability = ({ horoscopeType }: Props) => {
                 </div>
               </div>
               <div className="w-[272px]">
-                <button className="w-full rounded-md bg-[#e7bb55] py-1 px-5 text-[22px] font-semibold text-white">
+                <button className="w-full rounded-md bg-[#e7bb55] py-1 px-5 text-[18px] font-semibold text-white">
                   {item?.btn}
                 </button>
               </div>
