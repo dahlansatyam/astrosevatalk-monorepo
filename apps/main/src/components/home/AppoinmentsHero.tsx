@@ -40,14 +40,14 @@ function AppointmentsHero({}: Props) {
               <Link
                 key={index}
                 href={item?.url}
-                className="bg-white/5 flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] p-4"
+                className="flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl  bg-white/5  p-4"
               >
                 <img
                   src={item.src}
                   alt={item.name}
                   className="mx-auto h-[140px] w-[140px]"
                 />
-                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-[#D3B160] lg:text-[14px]">
+                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-white lg:text-[14px]">
                   {item.name}
                 </p>
               </Link>

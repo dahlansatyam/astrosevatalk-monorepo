@@ -61,7 +61,7 @@ const importantlinks = [
   {
     id: 5,
     title: "TalkAstrologer",
-    url: "/corprate/disclaimer",
+    url: "/talk-astrologer",
   },
   {
     id: 6,

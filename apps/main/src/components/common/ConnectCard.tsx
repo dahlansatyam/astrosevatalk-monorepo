@@ -6,7 +6,7 @@ type Props = {};
 
 const ConnectCard = (props: Props) => {
   return (
-    <div className="bg-[url('/home-hero-bg.png')] bg-cover py-8 lg:py-[35px]">
+    <div className="bg-[url('/chat-bg.svg')] bg-cover py-8 lg:py-[35px]">
       <Section>
         <div>
           <div className="flex flex-col items-center py-6 text-3xl font-bold text-white">
@@ -15,12 +15,12 @@ const ConnectCard = (props: Props) => {
           </div>
           <div className="flex flex-col items-center justify-center gap-4 py-6 sm:flex-row">
             <Link href="/talk-astrologer">
-              <button className=" rounded-3xl bg-[#D3B160] py-2 px-5 text-[22px] font-semibold text-white">
+              <button className=" h-[61px] w-[317px] rounded-[20px] bg-[#D3B160] py-2 px-5 text-[24px] font-semibold text-black">
                 Talk To Astrologer
               </button>
             </Link>
             <Link href="/chat-astrologer">
-              <button className=" rounded-3xl bg-[#D3B160] py-2 px-5 text-[22px] font-semibold text-white">
+              <button className=" h-[61px] w-[317px] rounded-[20px] bg-[#D3B160] py-2 px-5 text-[24px] font-semibold text-black">
                 Chat With Astrologer
               </button>
             </Link>
