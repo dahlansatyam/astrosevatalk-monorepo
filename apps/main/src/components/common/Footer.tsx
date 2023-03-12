@@ -98,6 +98,11 @@ const importantlinks = [
     title: "Shubh Muhurat",
     url: "/muhurat",
   },
+  {
+    id: 13,
+    title: "Namakaran Muhurat",
+    url: "/namakaranmuhurat",
+  },
 ];
 
 const social = [
