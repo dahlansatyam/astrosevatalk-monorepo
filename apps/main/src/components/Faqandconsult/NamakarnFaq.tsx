@@ -5,9 +5,9 @@ type Props = {};
 
 const NamakarnFaq = (props: Props) => {
   return (
-    <div>
+    <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
       <Section>
-        <div className="py-20">
+        <div className="">
           <div className="text-center font-[georgia]">
             <p className="text-[36px] font-bold">FAQs</p>
           </div>

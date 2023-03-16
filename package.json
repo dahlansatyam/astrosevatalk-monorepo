@@ -26,8 +26,11 @@
   "dependencies": {
     "@headlessui/react": "^1.7.10",
     "@heroicons/react": "^2.0.15",
+    "@hookform/resolvers": "^2.9.11",
     "react-hook-form": "^7.43.1",
     "react-icons": "^4.7.1",
-    "swiper": "^9.1.0"
+    "react-otp-input": "^2.4.0",
+    "swiper": "^9.1.0",
+    "yup": "^1.0.2"
   }
 }
