@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import { Button } from "ui";
 import About from "@/components/home/About";
 import Who from "@/components/home/Who";
@@ -12,7 +12,7 @@ import Appointments from "@/components/home/Appointments";
 import Services from "@/components/home/Services";
 import Hero from "@/components/home/Hero";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
